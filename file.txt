@@ -1,0 +1,1 @@
+Some text from file.txt. This is being served by the server. And any client can download it.
