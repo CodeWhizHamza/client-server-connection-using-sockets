@@ -62,8 +62,7 @@ int main(int argc, char *argv[])
 
     long total_bytes_received = 0;
     size_t bytes_received;
-    while (total_bytes_received < file_size &&
-           (bytes_received = recv(sockfd, recvBuff, BUFFER_SIZE, 0)) > 0)
+    while (total_bytes_received < file_size && (bytes_received = recv(sockfd, recvBuff, BUFFER_SIZE, 0)) > 0)
     {
         fwrite(recvBuff, 1, bytes_received, fp);
         total_bytes_received += bytes_received;
